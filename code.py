@@ -5,12 +5,12 @@ import numpy as np
 from google.colab import files
 
 # This is the Weather File
-df_1 = pd.read_excel(r'/content/drive/MyDrive/energy_data/Bareily2019-21_(WeatherData).xlsx',engine='openpyxl')
+df_1 = pd.read_excel(r'/content/Bareily2019-21_(WeatherData).xlsx',engine='openpyxl')
 
 print(df_1.info())
 
 # This is the Usage file
-df_2 = pd.read_excel(r'/content/drive/MyDrive/energy_data/BR_06.xlsx',engine='openpyxl')
+df_2 = pd.read_excel(r'/content/BR06.xlsx',engine='openpyxl')
 print(df_2.info())
 
 
