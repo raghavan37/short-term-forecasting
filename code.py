@@ -174,10 +174,6 @@ nc = [nc_2019,nc_2020,nc_2021]
 nc_1 = [nc_1_2019,nc_1_2020,nc_1_2021]
 elect = [elect_2019,elect_2020,elect_2021]
 
-# nc = [nc_2019,nc_2019,nc_2019]
-# nc_1 = [nc_1_2019,nc_1_2019,nc_1_2019]
-# elect = [elect_2019,elect_2019,elect_2019]
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -213,10 +209,6 @@ class NET(nn.Module):
         self.l1 = nn.Linear(256, 1)
 
 
-		# self.seq = nn.Sequential(nn.Linear(5+128,128),nn.ReLU(),
-		# 						nn.Linear(128,128),nn.ReLU(),
-		# 						nn.Linear(128,128),nn.ReLU(),
-		# 						nn.Linear(128,1))
     def forward(self, x, x1):
         y = x1[:, 0]
         d = x1[:, 1]
